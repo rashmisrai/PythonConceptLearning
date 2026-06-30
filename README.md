@@ -1,8 +1,8 @@
 # Python Concept Learning
 
-A repository for learning Python data structures and concepts.
+A repository for learning Python concepts and more likely DSA
 
-## 📚 What's Inside
+## 📚 Currently, What's Inside
 
 - **Dictionaries.py** - Dictionary operations and key-value pairs
 - **Sets.py** - Set operations and unique elements
