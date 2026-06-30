@@ -1,5 +1,5 @@
 # Dictionaries in Python
-
+'''
 student = {
     "name": "Rashmi",
     "age": 23,
@@ -207,16 +207,65 @@ for roll_no,details in students.items():
 
     print()
 
+'''
 
+# Dictionaries method
 
+# 1. clear()
 
+student = {
+    "name": "Rashmi",
+    "age": 23,
+    "course": "MCA"
+    }
+print(student)
+student.clear()
+print(student)
 
+student1 = {
+    "name": "Rashmi",
+    "age": 23,
+    "course": "MCA"
+    }
 
+# 2. copy()
 
+student2 = student1.copy()
+print(student2)
 
+# 3. fromkeys()
 
+fruits  = ["Apple","Mango","Banana"]
+newFruits = dict.fromkeys(fruits, "Available")
+print(newFruits)
 
+# 4. get()
+print(student1.get("age"))
 
+# 5. items()
+print(student1.items())
 
+# 6. keys()
+print(student1.keys())
 
+# 7. pop()
+student1.pop("course")
+print(student1)
 
+# 8. popitem()
+student1.popitem()
+print(student1)
+
+# 9. setdefault()
+
+result = student1.setdefault("city","Mumbai")
+print(result)
+print(student1)
+
+# 10. update()
+student1.update({"city":"Pune"})
+print(student1)
+
+# 11. values()
+a = student1.values()
+print(a)
