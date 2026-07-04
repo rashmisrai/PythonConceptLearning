@@ -1,5 +1,6 @@
 # Functions in Python
 '''
+
 name = str(input())
 
 def username():   # Create a function using def keyword
@@ -18,17 +19,17 @@ print(fahrenheit_to_celsius(67))
 
 def learn():
     pass
-'''
+
 
 # 1. Python Arguments
-'''
+
 person = str(input("Please enter your email: "))
 
 def data(email): # email => parameter (it is passed wihile creating the function)
     print(f"{email}@gmail.com")
 
 data(person) # person => argument (it is passed while calling the function)
-'''
+
 name1 = str(input("Please enter your name: "))
 age1 = int(input("Please enter your age: "))
 
@@ -128,24 +129,23 @@ print(cash(500,200))
 print(cash(500,500))
 
 # Positional only arguments
-'''
+
 def name(name):
     print("Hello", name)
 
 name("Rashmi")
 
-'''
+
 def name(name, /):
     print("Hello", name)
 
-name("Rashmi")
-'''
+
 # This will throw an error because this is strictly positional argument (, /)
 def age(age, /):
     print("Age is ", age)
 
 age(age = 23)
-'''
+
 
 # Keyword only arguments
 
@@ -165,12 +165,19 @@ print(s)
 
 
 
+'''
 
 
+# Python *args and **kwargs
 
 
-
-
+def add(*num):
+    sum = 0
+    for n in num:
+        sum += n
+    return sum
+print(add(2,5))
+print(add(3,4,56,6))
 
 
 
